@@ -1,16 +1,29 @@
 package org.example.baitap1;
 
+import java.time.LocalDate;
+
 public class Customer {
+    private int id;
     private String name;
-    private String dob;
+    private LocalDate birthDay;
     private String address;
     private String imageUrl;
 
-    public Customer(String name, String dob, String address, String imageUrl) {
+    public Customer(){}
+    public Customer(int id, String name, LocalDate birthDay, String address, String imageUrl) {
+        this.id = id;
         this.name = name;
-        this.dob = dob;
+        this.birthDay = birthDay;
         this.address = address;
         this.imageUrl = imageUrl;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -21,12 +34,12 @@ public class Customer {
         this.name = name;
     }
 
-    public String getDob() {
-        return dob;
+    public LocalDate getBirthDay() {
+        return birthDay;
     }
 
-    public void setDob(String dob) {
-        this.dob = dob;
+    public void setBirthDay(LocalDate birthDay) {
+        this.birthDay = birthDay;
     }
 
     public String getAddress() {
@@ -45,4 +58,3 @@ public class Customer {
         this.imageUrl = imageUrl;
     }
 }
-

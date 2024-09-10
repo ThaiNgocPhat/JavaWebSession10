@@ -22,6 +22,9 @@
     </style>
 </head>
 <body>
+    <a href="CustomerServlet?action=getCustomer">
+        Hien thi danh sach
+    </a>
 <div className="container mx-auto p-4">
     <h1 className="text-2xl font-bold text-center mb-4">Danh sách khách hàng</h1>
     <table className="min-w-full bg-white border border-zinc-300">
@@ -44,7 +47,6 @@
                 </td>
             </tr>
         </c:forEach>
-
         </tbody>
     </table>
 </div>
